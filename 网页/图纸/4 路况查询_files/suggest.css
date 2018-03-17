@@ -1,0 +1,9 @@
+#suggest_container{ background:#FFF; border:solid 1px #888; font-size:12px;-moz-user-select:none; display:none;}
+#suggest_container ol{ margin:0; padding:0; list-style:none; cursor:pointer; font-family:Arial, Helvetica, sans-serif;}
+#suggest_container li{ clear:both; height:20px; line-height:20px; background:#FFF; padding:0 5px; overflow:hidden;}
+#suggest_container li.selected_item{ background:#00C;}
+#suggest_container li.selected_item span{ color:#FFF;}
+#suggest_container .suggest_key{ float:left; font-size:12px;}
+#suggest_container .suggest_result{ display:none;}
+#suggest_container .suggest_close{ clear:both; height:20px; line-height:20px; text-align:right; padding-right:5px;}
+#suggest_container .suggest_close a{ color:#00C;}

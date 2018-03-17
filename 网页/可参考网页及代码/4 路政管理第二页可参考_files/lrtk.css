@@ -1,0 +1,25 @@
+/* 转载请保留版权信息：懒人图库 www.lanrentuku.com */
+ul,li{ list-style:none; padding:0; margin:0;}
+img{ border:0;}
+#zSlider{margin:0px; width:959px; overflow:hidden;}
+#picshow{}
+#picshow,#picshow_img{width:770px; height:193px; overflow:hidden; float:left;}
+#picshow_img li{width:770px; height:193px; overflow:hidden; float:left; display:none;}
+#picshow_img img{width:770px; height:193px;}
+#picshow_tx{left:0px; width:770px; bottom:0px; position:absolute; height:90px; overflow:hidden;}
+#picshow_tx li{ padding:10px 30px; height:70px; color:#fff; display:none;}
+#picshow_tx li a{color:#fff;}
+#picshow_tx li a:hover{text-decoration:underline;}
+#picshow_tx li h3{ margin:13px 0;}
+#picshow_tx li p{ color:#ccc; line-height:16px; height:16px; overflow:hidden;}
+
+#select_btn{width:180px; height:193px; color:#111; float:right; display:inline; background-color:#fff; }
+#select_btn li{padding:0px 0px 12px 0px; width:197px; height:55px; cursor:pointer;filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
+#select_btn li:hover{background-color:#fff;filter:alpha(opacity=100); -moz-opacity:1; -khtml-opacity: 1; opacity: 1; }
+#select_btn li.current{background-color:#fff;filter:alpha(opacity=100); -moz-opacity:1; -khtml-opacity: 1; opacity: 1; }
+#select_btn li.current:hover{background-color:#fff;}
+#select_btn a{color:#000;}
+#select_btn img{padding:0px; border:0px solid #ccc; width:197px; height:60px; float:left;}
+#select_btn .select_text{ height:20px; font:bold 13px/16px 'Microsoft YaHei'; overflow:hidden; display:block;}
+#select_btn .select_text:hover{text-decoration:underline;}
+#select_btn .select_date{ height:23px; line-height:23px; overflow:hidden; display:block;}

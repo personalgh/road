@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0047)http://bjggzxc.bjjtw.gov.cn/Home_index_1_1.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<meta name="keywords" content="公共自行车|自行车租赁|租自行车|北京公共自行车|官方">
+<meta name="description" content="北京公共自行车租赁官方网站，北京市公共自行车租赁点，北京市公共自行车办卡点">
+<title>北京公共自行车-北京市交通委员会运输管理局</title>
+<link type="text/css" href="./4 路政管理第二页可参考_files/lrtk.css" rel="stylesheet">
+<script src="./4 路政管理第二页可参考_files/hm.js"></script><script type="text/javascript" src="./4 路政管理第二页可参考_files/jquery.js"></script>
+<script type="text/javascript" src="./4 路政管理第二页可参考_files/lrtk.js"></script>
+<link href="./4 路政管理第二页可参考_files/main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+#win {
+	position:absolute;
+	width:80px;
+	height:85px;
+	line-height:22px;
+	z-index:1;
+	color:#000;
+	border:2px solid #5da1d0 ;
+	background:#FFFFFF;
+	opacity: 0.8;-moz-opacity: 0.8;filter:alpha(opacity=80);
+	padding:8px 12px;
+	margin:9px 0 0 8px;
+}
+.tel{
+	font:Arial; 
+	font-size:10pt;
+	font-weight:bold;
+}
+.telTd{
+	text-align: right;
+	font-size: 11pt;
+}
+-->
+</style>
+<script>
+	function openMapQuery(){
+		window.open("bdmap.html");
+	}
+	function openWdlb(){
+		window.open("wdlb.html");
+	}
+	function siteList(quyu){
+		var url = "wdlb.html";
+		if(quyu){
+			url += "?regionName=" + quyu;
+		}
+		window.open(url);
+	}
+</script>
+</head>
+
+<body>
+
+
+
+
+<script type="text/javascript" src="./4 路政管理第二页可参考_files/g.base.js"></script>
+<link rel="stylesheet" type="text/css" href="./4 路政管理第二页可参考_files/slide.css">
+<link type="text/css" href="./4 路政管理第二页可参考_files/lrtk.css" rel="stylesheet">
+<link href="./4 路政管理第二页可参考_files/main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+#menu {
+	position: absolute;
+	width: 228px;
+	height: 115px;
+	z-index: 1;
+	font-size: 14px;
+}
+-->
+</style>
+
+<script type="text/javascript">
+	function checkurl() {
+		var url = location.href;
+		console.log(url);
+		if(url.indexOf("/bjggzxc/") > 0) {
+			console.log("from jtw web.");
+			var newurl = url.replace("http://www.bjjtw.gov.cn/bjggzxc/", "http://bjggzxc.bjjtw.gov.cn/");
+			console.log(newurl);
+			top.location = newurl;
+		}
+	}
+	
+	checkurl();
+
+	var x = 50, y = 60;
+	var xin = true, yin = true;
+	var step = 1;
+	var delay = 10;
+	var obj = null;
+
+	function floatwww_qpsh_com() {
+		var L = T = 0;
+		var R = document.body.clientWidth - obj.offsetWidth;
+		var B = document.body.clientHeight - obj.offsetHeight;
+		obj.style.left = x + document.body.scrollLeft + "px";
+		obj.style.top = y + document.body.scrollTop + "px";
+		x = x + step * (xin ? 1 : -1);
+		if (x < L) {
+			xin = true;
+			x = L;
+		}
+		if (x > R) {
+			xin = false;
+			x = R;
+		}
+		y = y + step * (yin ? 1 : -1);
+		if (y < T) {
+			yin = true;
+			y = T;
+		}
+		if (y > B) {
+			yin = false;
+			y = B;
+		}
+	}
+
+$(document).ready(function(){
+	$("#navCircle li a").removeClass("active");
+	$('#navCircle li a[id=nav_index]')
+								.addClass("active");
+	//showWeather();
+			if('index' != 'yybk') {
+				$("#floatDiv").show();
+				obj = document.getElementById("floatDiv");
+				var itl = setInterval("floatwww_qpsh_com()", delay);
+				obj.onmouseover = function() {
+					clearInterval(itl);
+				}
+				obj.onmouseout = function() {
+					itl = setInterval("floatwww_qpsh_com()", delay);
+				}
+			} else {
+				$("#floatDiv").hide();
+			}
+					});
+	//是否显示天气，IE8和其他浏览器显示
+	function isShow(){
+		var flag = false;
+		if(document.all){
+			var browser=navigator.appName 
+			var b_version=navigator.appVersion 
+			var version=b_version.split(";"); 
+			var trim_Version=version[1].replace(/[ ]/g,""); 
+			if(browser=="Microsoft Internet Explorer" && trim_Version=="MSIE8.0"){
+				flag = true;
+			}
+		}else{
+			flag = true;
+		}
+		return flag;
+	}
+	
+	//显示天气
+	function showWeather(){
+		if(isShow()){
+			var iframe = document.createElement("iframe"); 
+			iframe.name =  "weather_inc";
+			iframe.width =  290;
+			iframe.allowtransparency =  true;
+			iframe.height =  70;
+			iframe.frameBorder =  0;
+			iframe.marginWidth =  0;
+			iframe.marginHeight =  0;
+			iframe.scrolling =  "no";
+			iframe.src = "http://tianqi.xixik.com/cframe/2";
+			document.getElementById("weatherTD").appendChild(iframe); 
+		}else{
+			document.getElementById("weather_title").style.display = "block";
+		}
+	}
+</script>
+<style>
+img{border:0;}
+a{color:#000;text-decoration:none;}
+a:hover{color:#FF6600;text-decoration:underline;}
+#weatherTD{
+	color: #FFF;
+	padding-top: 30px;
+}
+.wea_info{
+	line-height: 20px;
+}
+</style>
+	<table width="1004" height="100" border="0" align="center" cellpadding="0" cellspacing="0" background="./4 路政管理第二页可参考_files/top.gif">
+		<tbody><tr>
+			<td width="731">&nbsp;</td>
+			<td width="180" valign="middle" id="weatherTD" style="display: none;">
+				
+			</td>
+			
+			<td width="100" align="left" valign="middle" style="padding-top:8px;">
+				<a href="http://www.beijing.gov.cn/" target="_blank">
+					<img src="./4 路政管理第二页可参考_files/logo.gif">
+				</a>
+			</td>
+		</tr>
+	</tbody></table>
+	<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td width="23"><img src="./4 路政管理第二页可参考_files/bar_str.gif" width="23" height="38"></td>
+			<td background="./4 路政管理第二页可参考_files/bar_bg.gif"><div id="bar">
+					<ul id="navCircle">
+						<li><a id="nav_index" href="http://bjggzxc.bjjtw.gov.cn/Home_index_1_1.html" class="active">首页</a></li>
+						<li><a id="nav_bdmap" href="http://bjggzxc.bjjtw.gov.cn/bdmap.html">网点分布</a></li>
+						<li><a id="nav_wdlb" href="http://bjggzxc.bjjtw.gov.cn/wdlb.html">网点列表</a></li>
+						<li><a id="nav_fwgg" href="http://bjggzxc.bjjtw.gov.cn/Fwgg_list_1_1.html">服务公告</a></li>
+						<li><a id="nav_fwzn" href="http://bjggzxc.bjjtw.gov.cn/Fwzn_list_1.html">服务指南</a></li>
+						<li><a id="nav_cjwt" href="http://bjggzxc.bjjtw.gov.cn/Cjwt_list_1_1_0.html">常见问题</a></li>
+						<li><a id="nav_lxfs" href="http://bjggzxc.bjjtw.gov.cn/Lxfs_list_1_0101.html">联系方式</a></li>
+					</ul>
+				</div></td>
+			<td width="22"><img src="./4 路政管理第二页可参考_files/bar_end.gif" width="22" height="38"></td>
+		</tr>
+
+		
+		  <tr>
+		    <td><div style="position:absolute; width:959px; margin-left: 23px; z-index:999"><img src="./4 路政管理第二页可参考_files/banner_drop.png" style="width:100%; height:7px; "></div><img src="./4 路政管理第二页可参考_files/banner_left.png" width="23" height="193"></td>
+		    <td bgcolor="#FFFFFF"><div id="slide" style="position: relative;"><ul style="position: absolute; top: 0px; left: -1918px; width: 2877px; height: 193px;"><li><a href="javascript:void(0);"><img src="./4 路政管理第二页可参考_files/banner32.jpg" width="959" height="193"></a></li><li><a href="javascript:void(0);"><img src="./4 路政管理第二页可参考_files/banner33.jpg" width="959" height="193"></a></li><li><a href="javascript:void(0);"><img src="./4 路政管理第二页可参考_files/banner31.jpg" width="959" height="193"></a></li></ul><div><span class=""><a href="javascript:void(0);">1</a></span><span class=""><a href="javascript:void(0);">2</a></span><span class="curr"><a href="javascript:void(0);">3</a></span></div><div id="goback" class="o-control" style="display: none;"><a class="control"></a></div><div id="forward" class="o-control" style="display: none;"><a class="control"></a></div></div><div id="slideshow_footbar"></div>
+		    <script type="text/javascript">
+		    
+		    $("#slide").jdSlide({width:959,height:193,pics:[{src:"images/banner32.jpg",href:"javascript:void(0);",alt:"北京公共自行车-人文交通",breviary:"#",type:"img"},{src:"images/banner33.jpg",href:"javascript:void(0);",alt:"北京公共自行车-科技交通",breviary:"#",type:"img"},{src:"images/banner31.jpg",href:"javascript:void(0);",alt:"北京公共自行车-绿色交通",breviary:"#",type:"img"}]})</script></td>
+		    <td><img src="./4 路政管理第二页可参考_files/banner_right.png" width="22" height="193"></td>
+		  </tr>
+		
+	</tbody></table>
+	<div align="center">
+		<img src="./4 路政管理第二页可参考_files/banner_bottom1.gif" width="1004" height="10">
+	</div>
+
+<div id="floatDiv" style="position: absolute; left: 1025px; top: 1px; z-index: 1000;">
+<!--链接地址--><a href="http://bjggzxc.bjjtw.gov.cn/TzYybk_index_1.html">
+<!--图片地址-->	<img src="./4 路政管理第二页可参考_files/tzyybk.png" border="0" width="200" height="58"> 
+			</a>
+</div>
+
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>  
+    <td width="23" valign="top" background="./4 路政管理第二页可参考_files/border_left.png">&nbsp;</td>
+    <td width="215" valign="top" bgcolor="#FFFFFF"><table width="100%" height="28" border="0" cellpadding="0" cellspacing="0" background="./4 路政管理第二页可参考_files/title_01_bg.gif" style="margin:5px 0 0 0">
+      <tbody><tr>
+        <td><img src="./4 路政管理第二页可参考_files/title_01.gif" width="99" height="28"></td>
+        <td width="42"><a href="javascript:void(0);" onclick="window.open(&#39;Fwgg_list_aa0.html&#39;);"><img src="./4 路政管理第二页可参考_files/more.png" width="38" height="18" border="0"></a></td>
+      </tr>
+    </tbody></table><div id="news" style="height:190px;">
+          <ul>
+            
+              <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="http://bjggzxc.bjjtw.gov.cn/Fwgg_list_C7A37F760D40000137354973EEF0BE90.html" target="_blank">
+             
+             	关于运河明珠西、运河明...
+             	
+             </a></li>
+             
+              <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="http://bjggzxc.bjjtw.gov.cn/Fwgg_list_C7A37F66EDC00001A8A580C532A1C0F0.html" target="_blank">
+             
+             	关于开通开通官方新浪微...
+             	
+             </a></li>
+             
+              <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="http://bjggzxc.bjjtw.gov.cn/Fwgg_list_C792C8A75D500001886AAE6FF18018F2.html" target="_blank">
+             
+             	关于朝阳区麦子店办卡点...
+             	
+             </a></li>
+             
+              <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="http://bjggzxc.bjjtw.gov.cn/Fwgg_list_C792C8494B50000136EF1AAB89001875.html" target="_blank">
+             
+             	关于朝阳区063号东直...
+             	
+             </a></li>
+             
+              <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="http://bjggzxc.bjjtw.gov.cn/Fwgg_list_C792C82CE0E0000110EB7FFE50EC12D5.html" target="_blank">
+             
+             	关于朝阳区109号地铁...
+             	
+             </a></li>
+                      
+          </ul>
+    </div>
+    <table width="100%" height="28" border="0" cellpadding="0" cellspacing="0" background="./4 路政管理第二页可参考_files/title_02_bg.gif" style="margin:5px 0 0 0">
+      <tbody><tr>
+        <td><img src="./4 路政管理第二页可参考_files/title_04.gif" width="126" height="28"></td>
+      </tr>
+    </tbody></table>
+	<table width="100%" height="160" border="0" cellpadding="0" cellspacing="0" style="padding-right:5px;">
+    	<tbody><tr>
+    		<td class="telTd">
+    			东城、西城：400-157-7157
+    		</td>
+			<td style="width: 8px;"></td>
+    	</tr>
+    	<tr>
+    		<td class="telTd">
+    			海淀、丰台：400-157-7157
+    		</td>
+			<td style="width: 8px;"></td>
+    	</tr>
+    	<tr>
+    		<td class="telTd">
+    			朝阳：400-111-0206
+    		</td>
+			<td style="width: 8px;"></td>
+    	</tr>
+    	<tr>
+    		<td class="telTd">
+    			石景山：400-157-7157
+    		</td>
+			<td style="width: 8px;"></td>
+    	</tr>    	
+    	<tr>
+    		<td class="telTd">
+    			大兴：010-69260208
+    		</td>
+			<td style="width: 8px;"></td>
+    	</tr>
+    	<tr>
+    		<td class="telTd">
+    			通州：010-81518757
+    		</td>
+			<td style="width: 8px;"></td>
+    	</tr>
+    	<tr>
+    		<td class="telTd">
+    			平谷：010-89999087
+    		</td>
+			<td style="width: 8px;"></td>
+    	</tr>
+        <tr>
+            <td class="telTd">
+		                        房山、顺义：400-157-7157
+            </td>
+            <td style="width: 8px;"></td>
+        </tr>
+        <tr>
+            <td class="telTd">
+		                        昌平：010-57150989
+            </td>
+            <td style="width: 8px;"></td>
+        </tr>
+        <tr>
+            <td class="telTd">
+		          010-57159369
+            </td>
+            <td style="width: 8px;"></td>
+        </tr> 
+        <tr>
+            <td class="telTd">
+		                        怀柔：010-69690888
+            </td>
+            <td style="width: 8px;"></td>
+        </tr>                        
+        <tr>
+            <td class="telTd">
+		          010-69690999
+            </td>
+            <td style="width: 8px;"></td>
+        </tr> 
+        <tr>
+            <td class="telTd">
+		                        密云、延庆：400-157-7157
+            </td>
+            <td style="width: 8px;"></td>
+        </tr>        
+    	<tr>
+    		<td class="telTd">
+    			亦庄：010-69260208
+    		</td>
+			<td style="width: 8px;"></td>
+    	</tr>
+    </tbody></table>
+	</td>
+    <td width="10" valign="top" background="./4 路政管理第二页可参考_files/border_right.png">&nbsp;</td>
+    <td width="10" valign="top" background="./4 路政管理第二页可参考_files/border_left.png" style="background-position:right">&nbsp;</td>
+    <td valign="top" bgcolor="#FFFFFF">
+	    <table width="100%" height="28" border="0" cellpadding="0" cellspacing="0" background="./4 路政管理第二页可参考_files/title_02_bg.gif" style="margin:5px 0 0 0">
+	      <tbody><tr>
+	        <td><img src="./4 路政管理第二页可参考_files/title_02.gif" width="94" height="28"></td>
+	        <td width="58" background="./4 路政管理第二页可参考_files/map_search_bg.gif" style="padding-left:15px;"><a href="http://bjggzxc.bjjtw.gov.cn/Home_index_1_1.html#" onclick="openWdlb();">网点列表</a></td>
+	        <td width="10"></td>
+	        <td width="58" background="./4 路政管理第二页可参考_files/map_search_bg.gif" style="padding-left:15px;"><a href="http://bjggzxc.bjjtw.gov.cn/Home_index_1_1.html#" onclick="openMapQuery();">地图查询</a></td>
+	      </tr>
+	    </tbody></table>
+	    <div style="background-position:center; height:380px; margin:5px 0 5px 0 ">
+	      <a href="javascript:void(0);" onclick="openMapQuery();"><img src="./4 路政管理第二页可参考_files/3-4.png" width="489" height="380" alt="北京公共自行车-网点分布"></a>
+	    </div>
+    </td>
+    <td width="10" valign="top" background="./4 路政管理第二页可参考_files/border_right.png">&nbsp;</td>
+    <td width="10" valign="top" background="./4 路政管理第二页可参考_files/border_left.png" style="background-position:right">&nbsp;</td>
+    <td width="215" valign="top" bgcolor="#FFFFFF"><table width="100%" height="28" border="0" cellpadding="0" cellspacing="0" background="./4 路政管理第二页可参考_files/title_01_bg.gif" style="margin:5px 0 0 0">
+      <tbody><tr>
+        <td><img src="./4 路政管理第二页可参考_files/title_03.gif" width="93" height="28"></td>
+        <td width="42"><a href="javascript:void(0);" onclick="window.open(&#39;Fwzn_list_1_1.html&#39;);"><img src="./4 路政管理第二页可参考_files/more.png" width="38" height="18" border="0"></a></td>
+      </tr>
+    </tbody></table><div id="news" style="height:250px;">
+    	<div style="font-size: 12px;line-height:22px;padding-top:5px;color:#103468;">
+    		　　城六区车辆通存通取，可以跨区租还车；郊区县独立运营，各区县内部通存通取，车辆不跨区骑行。
+    	</div>
+    	<hr style="height:0px;width: 100%;">
+    	<ul>
+            <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="javascript:void(0);" onclick="window.open(&#39;Fwzn_list_1_1_0.html&#39;);">办卡网点及办卡时间</a></li>
+            <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="javascript:void(0);" onclick="window.open(&#39;Fwzn_list_1_2_0.html&#39;);">租车卡办理条件</a></li>
+            <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="javascript:void(0);" onclick="window.open(&#39;Fwzn_list_1_3_0.html&#39;);">租车费用</a></li>
+            <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="javascript:void(0);" onclick="window.open(&#39;Fwzn_list_1_6_0.html&#39;);">办卡流程</a></li>
+            <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="javascript:void(0);" onclick="window.open(&#39;Fwzn_list_1_5_0.html&#39;);">租还流程</a></li>
+          </ul>
+    
+    </div>
+    <table width="100%" height="28" border="0" cellpadding="0" cellspacing="0" background="./4 路政管理第二页可参考_files/title_02_bg.gif" style="margin:5px 0 0 0">
+      <tbody><tr>
+        <td><img src="./4 路政管理第二页可参考_files/title_05.gif" width="96" height="28"></td>
+	    <td width="42"><a href="javascript:void(0);" onclick="window.open(&#39;Cjwt_list_1_1_0.html&#39;);"><img src="./4 路政管理第二页可参考_files/more.png" width="38" height="18" border="0"></a></td>
+      </tr>
+    </tbody></table>
+    <div id="news" style="height:100px;">
+    	<ul>
+            <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="javascript:void(0);" onclick="window.open(&#39;Cjwt_list_1_1_0.html&#39;);">办卡问题</a></li>
+            <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="javascript:void(0);" onclick="window.open(&#39;Cjwt_list_1_2_0.html&#39;);">租还问题</a></li>
+            <li><img src="./4 路政管理第二页可参考_files/dian.gif"> <a href="javascript:void(0);" onclick="window.open(&#39;Cjwt_list_1_3_0.html&#39;);">其他问题</a></li>
+        </ul>
+    </div></td>
+    <td width="22" valign="top" background="./4 路政管理第二页可参考_files/border_right.png">&nbsp;</td>
+  </tr>
+  
+</tbody></table>
+
+
+<div align="center"><img src="./4 路政管理第二页可参考_files/main_drop.png" width="1004" height="6">
+</div>
+<table width="1004" height="56" border="0" align="center" cellpadding="0" cellspacing="0" background="./4 路政管理第二页可参考_files/bottom.png" style="margin-top:1px">
+  <tbody><tr>
+    <td align="center" valign="top" style="padding:14px 0 0 0; font-family:Arial; font-size:12px">Copyright ©2013 北京市交通委员会运输管理局 版权所有 All rights reserved </td>
+  </tr>
+</tbody></table>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hmInnerHTML = "//hm.baidu.com/hm.js?4f4b79c7dc17d83664848ac0185e9e4f";
+  var hm = document.createElement("script");
+  hm.src = hmInnerHTML;
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+</body></html>

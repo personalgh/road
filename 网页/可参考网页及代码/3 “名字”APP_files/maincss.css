@@ -1,0 +1,29 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0px; padding:0px;}
+body{color: #000000;font-family:"Arial","微软雅黑","宋体";  font-size:14px; /*overflow-x:hidden;不允许横向滚动条*/ background:#f6f6f8 url(../../images/app/topbg1.jpg) repeat-x left top;}
+div{margin: 0px;padding: 0px;border: 0px;}
+form{margin: 0px;padding: 0px;border: 0px;}
+img{vertical-align:middle;margin: 0px;padding: 0px;border: 0px; }/*设置图片初始化为垂直居中，因为默认的是左上角对齐*/
+table,tr,td,dr,th {margin: 0px;padding: 0px;border: 0px;}
+table{ border-collapse:collapse; border-spacing:0; }/*合并重复的边线*/
+ul,ol,li,dl,dt,dd{margin: 0px;padding: 0px;list-style-type:none; }
+
+a:link,a:visited,a:active{ color:#4c4c4c; text-decoration:none; }
+a:hover{ color:#ee7822; text-decoration: none;}
+
+.clearboth{font-size: 0px;margin: 0px;padding: 0px;	clear: both;height: 0px;border: 0px;}
+.floatleft{ float:left;}
+
+/*===============================index=======================*/
+
+/*-------------------------top----------------------*/
+.top_w{ width:100%;min-width:1140px; height:650px;background:url(../../images/app/topbg2.jpg) repeat-x center top;}/*加上一个最小宽度，避免浏览器窗口压缩的很窄的时候背景变形或填充不完整的问题*/
+	.top{width:1140px;height:650px; margin:0 auto;}
+
+/*-----------content--------------*/
+.cont_wrap{width:1150px; margin:0 auto;min-height:2px; height:2px; height:auto !important; overflow:hidden; }
+	
+/*-----------foot--------------*/
+.foot{width:100%; height:90px; line-height:90px;text-align:center; font-size:14px; color:#8a8a8a;}

@@ -1,0 +1,5 @@
+window.__BIZCODE='';
+window.__BIZCODE='';
+document.write('<' + 'script src="http://114.251.208.69/Web-T_PICC/common_config.js"'+'type="text/javascript"'+'charset="gb2312"'+'><'+'/script>');
+document.write('<' + 'script src="http://114.251.208.69/Web-T_PICC/script/0.1/script.js"'+'type="text/javascript"'+'charset="gb2312"'+'><'+'/script>');
+document.write('<' + 'script src="http://114.251.208.69/Web-T_PICC/script/0.1/api.js"'+'type="text/javascript"'+'charset="gb2312"'+'><'+'/script>');

@@ -1,0 +1,59 @@
+body {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    /*overflow:hidden;*/
+}
+
+.tab_road_district {
+    font-size: 15px !important;
+}
+
+#count_show_area {
+    font-size: 15px !important;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#condition, #trf_Show_div, #table_jam_show, #table_slow_show, #table_normal_show, #jam_show_area  {
+    font-size: 14px !important;
+}
+
+#condition table, #trf_Show_div table, #jam_show_area table{
+    font-size: 14px !important;
+}
+
+.title {
+    font-size: 16px;
+    color: #06F !important;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    margin: 0 7px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: red;
+}
+
+a:focus {
+    outline: 0;
+}
+
+img {
+    border: 0;
+}
+
