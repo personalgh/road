@@ -486,16 +486,17 @@ p{
 }
 
 .Rup21_choose {
-	width: 30%;
+	width: 31%;
 	float: left;
 	margin: 2px;
-	border: solid black 1px;
+/*	border: solid black 1px;*/
 }
 
 .Rup21_choose_p {
 	font-size: 15px;
 	text-align: center;
 	margin: 0;
+	width: 100%;
 }
 
 .Rup22 {

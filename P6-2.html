@@ -18,8 +18,50 @@
 <link href="css/P6_2.css" rel="stylesheet" type="text/css">
 <!--PLACE FOR BAIDU MAP API-->
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=	gaCvQUjhFOhszGoYWeUxkUnY3jkCwwN6"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=gaCvQUjhFOhszGoYWeUxkUnY3jkCwwN6"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+<script type="text/javascript" src="6-2-js.js"></script>
+<script>
+//$(document).ready(function(){
+//	$('#fstcls').click(function b1(){
+//		$('#Rup22_1').show;
+//		$('#Rup22_2').hide;
+//		$('#Rup22_3').hide;
+//	});
+//	$('#seccls').click(function(){
+//		$('Rup22_1').hide;
+//		$('Rup22_2').show;
+//		$('Rup22_3').hide;
+//	});
+//	$('#fstcls').click(function(){
+//		$('Rup22_1').hide;
+//		$('Rup22_2').hide;
+//		$('Rup22_3').show;
+//	});
+//});
+function b1(){
+	$('#Rup22_1').show;
+	$('#Rup22_2').hide;
+	$('#Rup22_3').hide;
+}
+function b2(){
+	$('Rup22_1').hide;
+	$('Rup22_2').show;
+	$('Rup22_3').hide;
+}
+function b3(){
+	$('#Rup22_1').hide;
+	$('#Rup22_2').hide;
+	$('#Rup22_3').show;
+}
+</script>
+<script>
+$(document).ready(function(){
+	$('#xxx').click(function(){
+		$('#ol').hide;
+	});
+});
+</script>
 <style type="text/css">
 /*
 ul, li {
@@ -52,6 +94,7 @@ body {
 <!--PLACE FOR BAIDU MAP API-->
 </head>
 <body>
+	<button id="xxx">??</button>
 <div class="container">
   <header>
     <div class="primary_header">
@@ -139,21 +182,41 @@ body {
           <p class="after_small_icon">推荐方案</p>
           <img class="small_icon" src="picres/more3.png" alt="" style="float: right; width:20%"></div>
         <div class="Rup21" style="overflow: hidden">
-          <div class="Rup21_choose">
-            <p class="Rup21_choose_p">综合</p>
+          <div class="Rup21_choose"> 
+            <!--            <input type="button" class="Rup21_choose_p" id="fstcls" value="综合">-->
+            <button type="button" class="Rup21_choose_p" id="fstcls" onClick="b1()" value="综合">综合</button>
+            <!--            <p class="Rup21_choose_p">综合</p>--> 
           </div>
-          <div class="Rup21_choose">
-            <p class="Rup21_choose_p">破损等级</p>
+          <div class="Rup21_choose"> 
+            <!--            <input type="button" class="Rup21_choose_p" id="seccls" value="破损等级">-->
+            <button type="button" class="Rup21_choose_p" id="seccls" onClick="b2()" value="破损等级">破损等级</button>
+            <!--            <p class="Rup21_choose_p">破损等级</p>--> 
           </div>
-          <div class="Rup21_choose">
-            <p class="Rup21_choose_p">舒适度</p>
+          <div class="Rup21_choose"> 
+            <!--            <input type="button" class="Rup21_choose_p" id="trdcls" value="舒适度">-->
+            <button type="button" class="Rup21_choose_p" id="trdcls" onClick="b3()" value="舒适度">舒适度</button>
+            <!--            <p class="Rup21_choose_p">舒适度</p>--> 
           </div>
         </div>
-        <div class="Rup22">
+        <div class="Rup22" id="Rup22_1">
           <ol>
-            <li>以后我会补充</li>
-            <li>路名</li>
-            <li>..</li>
+            <li id="lil_1_1">1以后我会补充</li>
+            <li id="lil_1_2">1路名</li>
+            <li id="lil_1_3">1..</li>
+          </ol>
+        </div>
+        <div class="Rup22" id="Rup22_2" hidden="">
+          <ol>
+            <li id="lil_2_1">2以后我会补充</li>
+            <li id="lil_2_2">2路名</li>
+            <li id="lil_2_3">2..</li>
+          </ol>
+        </div>
+        <div class="Rup22" id="Rup22_3" hidden="">
+          <ol>
+            <li id="lil_3_1">3以后我会补充</li>
+            <li id="lil_3_2">3路名</li>
+            <li id="lil_3_3">3..</li>
           </ol>
         </div>
       </div>
