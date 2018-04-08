@@ -40,19 +40,19 @@
 //	});
 //});
 function b1(){
-	$('#Rup22_1').show;
-	$('#Rup22_2').hide;
-	$('#Rup22_3').hide;
+	$('#Rup22_1').show();
+	$('#Rup22_2').hide();
+	$('#Rup22_3').hide();
 }
 function b2(){
-	$('Rup22_1').hide;
-	$('Rup22_2').show;
-	$('Rup22_3').hide;
+	$('Rup22_1').hide();
+	$('Rup22_2').show();
+	$('Rup22_3').hide();
 }
 function b3(){
-	$('#Rup22_1').hide;
-	$('#Rup22_2').hide;
-	$('#Rup22_3').show;
+	$('#Rup22_1').hide();
+	$('#Rup22_2').hide();
+	$('#Rup22_3').show();
 }
 </script>
 <script>
@@ -176,7 +176,7 @@ body {
 					margin-top:30px;
 					padding:15px;
 					height: 29%;
-					overflow: scroll;
+					overflow: hidden;
 					">
         <div class="sec_title"><img class="small_icon" src="picres/63.jpg" alt="">
           <p class="after_small_icon">推荐方案</p>
@@ -198,26 +198,26 @@ body {
             <!--            <p class="Rup21_choose_p">舒适度</p>--> 
           </div>
         </div>
-        <div class="Rup22" id="Rup22_1">
-          <ol>
-            <li id="lil_1_1">1以后我会补充</li>
-            <li id="lil_1_2">1路名</li>
-            <li id="lil_1_3">1..</li>
-          </ol>
+        <div class="Rup22" id="Rup22_1" style="overflow: scroll;height: 100px;">
+          <ul style="height: 5px;font-size: 15px;">
+            <li id="lil_1_1">西四环四季桥南</li>
+            <li id="lil_1_2">西四环南沙窝桥南</li>
+            <li id="lil_1_3">西四环马家楼桥东</li>
+          </ul>
         </div>
-        <div class="Rup22" id="Rup22_2" hidden="">
-          <ol>
-            <li id="lil_2_1">2以后我会补充</li>
-            <li id="lil_2_2">2路名</li>
-            <li id="lil_2_3">2..</li>
-          </ol>
+        <div class="Rup22" id="Rup22_2" hidden="" style="overflow: scroll;height: 100px;">
+          <ul style="height: 5px;font-size: 15px;">
+            <li id="lil_2_1">西四环四季桥南</li>
+            <li id="lil_2_2">西四环马家楼桥东</li>
+            <li id="lil_2_3">西四环南沙窝桥南</li>
+          </ul>
         </div>
-        <div class="Rup22" id="Rup22_3" hidden="">
-          <ol>
-            <li id="lil_3_1">3以后我会补充</li>
-            <li id="lil_3_2">3路名</li>
-            <li id="lil_3_3">3..</li>
-          </ol>
+        <div class="Rup22" id="Rup22_3" hidden="" style="overflow: scroll;height: 100px;">
+          <ul style="height: 5px;font-size: 15px;">
+            <li id="lil_3_1">西四环马家楼桥东</li>
+            <li id="lil_3_2">西四环南沙窝桥南</li>
+            <li id="lil_3_3">西四环四季桥南</li>
+          </ul>
         </div>
       </div>
       <div class="Rmid" 
@@ -225,17 +225,16 @@ body {
 					border-left: 3px dashed #000000;
 					margin: 10px;
 					margin-top:30px;
-					padding:15px;
 					height: 29%;
-					overflow: scroll;
+					overflow: hidden;
 					">
         <div class="sec_title"><img class="small_icon" src="picres/64.jpg" alt="">
           <p class="after_small_icon">准备修复路段</p>
           <img class="small_icon" src="picres/more3.png" alt="" style="float: right; width:20%"></div>
-        <div class="Rmid2">
-          <ul>
-            <li class="Rmidlist">+_______________________-</li>
-            <li class="Rmidlist">+_______________________-</li>
+        <div class="Rmid2" style="overflow: scroll;height: 100px;">
+          <ul style="height: 5px;font-size: 10px;">
+            <li class="Rmidlist">+____________________________________-</li>
+            <li class="Rmidlist">+____________________________________-</li>
           </ul>
         </div>
       </div>

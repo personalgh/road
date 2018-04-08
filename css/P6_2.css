@@ -78,7 +78,7 @@
 	margin-left: auto;
 	padding-top: 0px;
 	padding-right: 0px;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 	padding-left: 0px;
 	width: 100%;
 }
@@ -136,7 +136,7 @@
 	float: left;
 /*	background-color: #F6F6F6;*/
 	
-	height: 450px;
+/*	height: 450px;*/
 	
 }
 .container .right_article ul {
@@ -455,6 +455,7 @@ p{
 	vertical-align:middle;
 	float: left;
 	display: inline-block;
+	height: 100%;
 }
 
 .sec_title {
@@ -471,13 +472,13 @@ p{
 	float: left;
 	margin: 0px;
 	font-size: 25px;
-	width: 70%;
+	width: 30%;
 	display: inline-block;
 }
 
 .after_small_icon {
 	margin: 0px;
-	width: 80%;
+	width: 70%;
 	display: inline-block;
 }
 
@@ -493,7 +494,7 @@ p{
 }
 
 .Rup21_choose_p {
-	font-size: 15px;
+	font-size: 13px;
 	text-align: center;
 	margin: 0;
 	width: 100%;
